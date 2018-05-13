@@ -7,3 +7,6 @@ export {TextStyle};
 
 import Dimentions from './dimentions'
 export {Dimentions}
+
+import Cards from './cards'
+export {Cards}
