@@ -5,7 +5,7 @@ import {colorSquash, color_divider} from '../colors'
 
 const CardSection = (props) => {
     return (
-        <View style={styles.sectionStyle}>{props.children}</View>
+        <View style={{...styles.sectionStyle, ...props.style}}>{props.children}</View>
     );
 }
 

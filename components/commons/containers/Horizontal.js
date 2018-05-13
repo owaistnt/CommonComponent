@@ -5,7 +5,7 @@ import {horizontalStyle} from './container-styles'
 
 const Horizontal=(props)=>{
     return(
-        <View style={{...horizontalStyle}}>{props.children}</View>
+        <View style={{...horizontalStyle, ...props.style}}>{props.children}</View>
     );
 }
 

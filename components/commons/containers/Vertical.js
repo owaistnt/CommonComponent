@@ -5,7 +5,7 @@ import {verticalStyle} from './container-styles'
 
 const Vertical=(props)=>{
     return(
-        <View style={{...verticalStyle}}>{props.children}</View>
+        <View style={{...verticalStyle, ...props.style}}>{props.children}</View>
     );
 }
 
