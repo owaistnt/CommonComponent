@@ -1,7 +1,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import { AbstractButton } from './AbstractButton'
-import {button_outline_streched, button_default} from './button-styles'
+import {button_outline_streched} from './button-styles'
 import {text_14_medium} from '../textstyle'
 
 const ButtonOutlineStretched = (props) => {

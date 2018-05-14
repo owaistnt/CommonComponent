@@ -31,10 +31,6 @@ export const colorSquash = {
   columbia_blue:"#85C1FF",
   vibrant_red:"#FF585C",
   warm_peach:"#FAA078",
-
-
-
-
 };
 
 export const color_primary = colorSquash.pink1;

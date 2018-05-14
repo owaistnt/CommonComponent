@@ -175,6 +175,11 @@ export const text_14_accent = {
     color: color_secondary,
 }
 
+export const text_14_accent_medium={
+    ...text_14_accent,
+    ...text_14_medium,
+}
+
 export const text_14_accent_bold={
     ...text_14_accent,
     ...text_14_bold,

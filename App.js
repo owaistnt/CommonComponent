@@ -11,21 +11,25 @@ import {
   text_12_color_offer
 } from './components/commons/textstyle'
 
-import { ButtonColored } from './components/commons/button/ButtonColored'
 import {
   AbstractButton,
+  ButtonColored,
   ButtonColoredWide,
   ButtonColoredStreched,
   ButtonBorderless,
   ButtonBorderlessColored,
   ButtonOutline,
   ButtonOutlineStretched,
-} from './components/commons/button';
+  ButtonOutlineColored,
+  ButtonOutlineStretchedColored,
+
+} from './components/commons/buttons';
 
 import { CardSection, Card } from './components/commons/cards';
 import { Vertical } from './components/commons/containers/Vertical';
 import { verticalStyle } from './components/commons/containers/container-styles'
 import { CenterVertical } from './components/commons/containers';
+
 
 
 export default class App extends React.Component {
@@ -78,6 +82,8 @@ export default class App extends React.Component {
             <CenterVertical style={{flex:1}}>
               <ButtonOutline>Outline</ButtonOutline>
               <ButtonOutlineStretched>Outline Stretched</ButtonOutlineStretched>
+              <ButtonOutlineColored>Outline Colored</ButtonOutlineColored>
+              <ButtonOutlineStretchedColored>Stretched</ButtonOutlineStretchedColored>
             </CenterVertical>
           </CardSection>
         </Card>
