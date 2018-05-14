@@ -8,7 +8,8 @@ const ButtonColoredStreched = (props) => {
     return (
         <AbstractButton
             textStyle={text_14_white_medium}
-            buttonStyle={button_colored_streched}>{props.children}</AbstractButton>
+            buttonStyle={button_colored_streched}
+            _onPress={props._onPress}>{props.children}</AbstractButton>
     );
 }
 

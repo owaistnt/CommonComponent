@@ -8,7 +8,8 @@ const ButtonBorderlessColored = (props) => {
     return(
             <AbstractButton 
             textStyle={text_14_accent_bold}
-            buttonStyle={button_default}>{props.children}</AbstractButton>
+            buttonStyle={button_default}
+            _onPress={props._onPress}>{props.children}</AbstractButton>
     );
 }
 
