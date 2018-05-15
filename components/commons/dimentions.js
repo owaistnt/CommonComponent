@@ -1,4 +1,4 @@
-export const paddingConstant={
+export const PADDING_CONSTANTS={
     padding_2:2,
     padding_4:4,
     padding_8:8,
@@ -11,7 +11,7 @@ export const paddingConstant={
 }
 
 
-export const marginConstant={
+export const MARGIN_CONSTANTS={
     margin_2:2,
     margin_4:4,
     margin_8:8,
@@ -25,7 +25,7 @@ export const marginConstant={
 }
 
 
-export const heightConstants={
+export const HEIGHT_CONSTANTS={
 
     height_status_bar:16,
     height_toolbar:56,
