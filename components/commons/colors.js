@@ -1,4 +1,4 @@
-export const colorSquash = {
+export const COLOR_PALLETE = {
   pink1: "#FF5A60",
   pink2:"#FF8B8F",
   pink3:"#FEC6C8",
@@ -33,37 +33,39 @@ export const colorSquash = {
   warm_peach:"#FAA078",
 };
 
-export const color_primary = colorSquash.pink1;
-export const color_secondary = colorSquash.blue1;
+export const color_primary = COLOR_PALLETE.pink1;
+export const color_secondary = COLOR_PALLETE.blue1;
 
-export const color_primary_dark = colorSquash.pink6;
-export const color_primary_light=colorSquash.pink2;
-export const color_primary_lighter=colorSquash.pink4;
+export const color_primary_dark = COLOR_PALLETE.pink6;
+export const color_primary_light=COLOR_PALLETE.pink2;
+export const color_primary_lighter=COLOR_PALLETE.pink4;
+
+export const color_error_state=COLOR_PALLETE.pink5
 
 //For Accent Color buttons and components
-export const color_secondary_medium=colorSquash.blue2;
-export const color_secondary_light=colorSquash.blue3;
-export const color_hover=colorSquash.blue4
-export const color_hover_secondary=colorSquash.blue5
+export const color_secondary_medium=COLOR_PALLETE.blue2;
+export const color_secondary_light=COLOR_PALLETE.blue3;
+export const color_hover=COLOR_PALLETE.blue4
+export const color_hover_secondary=COLOR_PALLETE.blue5
 
 
 
 
-export const color_text_primary=colorSquash.grey2;
-export const color_text_secondary=colorSquash.grey3;
-export const color_text_tertiary=colorSquash.grey4;
-export const color_text_hint=colorSquash.grey5;
+export const color_text_primary=COLOR_PALLETE.grey2;
+export const color_text_secondary=COLOR_PALLETE.grey3;
+export const color_text_tertiary=COLOR_PALLETE.grey4;
+export const color_text_hint=COLOR_PALLETE.grey5;
 
-export const color_text_deactivated=colorSquash.grey6;
-export const color_divider = colorSquash.grey7;
-export const color_page_background=colorSquash.grey8;
-export const color_pending_notification=colorSquash.grey9;
+export const color_text_deactivated=COLOR_PALLETE.grey6;
+export const color_divider = COLOR_PALLETE.grey7;
+export const color_page_background=COLOR_PALLETE.grey8;
+export const color_pending_notification=COLOR_PALLETE.grey9;
 
 
-export const color_text_dark = colorSquash.white;
-export const color_text_light = colorSquash.black;
+export const color_text_dark = COLOR_PALLETE.white;
+export const color_text_light = COLOR_PALLETE.black;
 
 //other colors
-export const color_offer = colorSquash.green2;
-export const color_notification_dot=colorSquash.red1;
+export const color_offer = COLOR_PALLETE.green2;
+export const color_notification_dot=COLOR_PALLETE.red1;
 

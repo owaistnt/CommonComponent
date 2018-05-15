@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import {colorSquash, color_divider} from '../colors'
+import {COLOR_PALLETE, color_divider} from '../colors'
 
 
 const CardSection = (props) => {
@@ -13,7 +13,7 @@ const styles = {
     sectionStyle: {
         borderBottomWidth: 1,
         padding: 5,
-        backgroundColor: colorSquash.white,
+        backgroundColor: COLOR_PALLETE.white,
         justifyContent: 'flex-start',
         flexDirection: 'row',
         borderColor: color_divider,

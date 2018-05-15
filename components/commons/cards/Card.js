@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import {color_divider, colorSquash} from '../colors'
+import {color_divider, COLOR_PALLETE} from '../colors'
 const Card = (props) => {
     return (
         <View style={{...styles.cardStyle, ...props.style}}>{props.children}</View>
@@ -14,7 +14,7 @@ const styles = {
         borderRadius: 2,
         borderColor: color_divider,
         borderBottomWidth: 0,
-        shadowColor: colorSquash.black,
+        shadowColor: COLOR_PALLETE.black,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 2,

@@ -1,4 +1,4 @@
-import { color_secondary, color_divider, colorSquash } from "../colors";
+import { color_secondary, color_divider, COLOR_PALLETE } from "../colors";
 
 const button_shadow = {
     borderWidth: 1,
@@ -56,7 +56,7 @@ export const button_outline = {
   ...button_default,
   borderWidth: 1,
   borderColor: color_divider,
-  backgroundColor: colorSquash.white
+  backgroundColor: COLOR_PALLETE.white
 };
 
 export const button_outline_streched = {
