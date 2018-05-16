@@ -1,12 +1,8 @@
 import Colors from './colors';
 export {Colors};
 
-import  * as TextStyle from './textstyle'
+import  * as TextStyle from './text'
 export {TextStyle};
-
-import * as TextStyle2 from './text'
-export {TextStyle2};
-
 
 import * as Dimentions from './dimentions'
 export {Dimentions};

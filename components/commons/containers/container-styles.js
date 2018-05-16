@@ -27,7 +27,9 @@ export const leftHorizontal = {
 };
 
 export const horizontalReverse = {
-  flexDirection: "row-reverse"
+  flexDirection: "row-reverse",
+  alignItems:"center",
+
 };
 
 export const rightHorizontal = {

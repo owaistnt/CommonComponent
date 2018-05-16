@@ -112,3 +112,10 @@ export const text_color_white={
 export const text_color_black={
     color:color_text_light
 }
+
+export const text_default_margins={
+    marginTop:2,
+    marginBottom:2,
+    marginLeft:2,
+    marginRight:2,
+}
