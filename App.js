@@ -1,16 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
-import {
-  TextStyle,
-  Colors,
-  Dimentions,
-  Buttons,
-} from "./components/commons";
-
-import {CardSection, Card} from './components/commons/cards'
-
-import { verticalStyle } from "./components/commons/containers/container-styles";
-import { CenterVertical, Vertical } from "./components/commons/containers";
 import {PlanCard} from './components/plancard'
 
 export default class App extends React.Component {

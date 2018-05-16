@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, Text } from "react-native";
 import { Card, CardSection } from "./commons/cards";
 import { ButtonColored } from "./commons/buttons";
-import { TextStyle } from "./commons";
+import { TextStyle, TextStyle2 } from "./commons";
 import {
   Vertical,
   Horizontal,
@@ -11,6 +11,7 @@ import {
   Right,
   RightVertical
 } from "./commons/containers";
+
 
 class PlanCard extends Component {
   render() {
@@ -26,7 +27,7 @@ class PlanCard extends Component {
               <HorizontalReverse>
                   <Text>Rs 2500</Text>
                   <Text>Rs 4,450</Text>
-                  <Text style={{...TextStyle.text_12_color_offer}}>25% off</Text>
+                  <Text style={{...TextStyle2.Text_10.color_offer}}>25% off</Text>
               </HorizontalReverse>
             <Text>Rs 2500 per month</Text>
           </RightVertical>

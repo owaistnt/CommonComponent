@@ -1,5 +1,5 @@
-import {
-    color_primary,
+
+import {   color_primary,
     color_text_dark,
     color_text_light,
     color_secondary,
@@ -9,7 +9,11 @@ import {
     color_text_hint,
     color_text_tertiary,
     color_text_deactivated,
-} from './colors'
+    color_primary_light,
+     color_primary_dark, 
+     color_secondary_light, 
+     color_secondary_medium,
+      color_error_state } from '../colors';
 
 /* 
 Font Weights
@@ -70,5 +74,41 @@ export const text_black={
 }
 
 export const text_color_offer={
+    color:color_offer,
+}
 
+export const text_app_primary={
+    color:color_primary,
+}
+
+export const text_app_secondary={
+    color: color_secondary,
+}
+
+export const text_app_primary_light={
+    color: color_primary_light,
+}
+
+export const text_app_primary_dark={
+    color: color_primary_dark,
+}
+
+export const text_app_secondary_light={
+    color : color_secondary_medium,
+}
+
+export const text_app_secondary_lighter={
+    color : color_secondary_light,
+}
+
+export const text_app_error={
+    color:color_error_state,
+}
+
+export const text_color_white={
+    color:color_text_dark,
+}
+
+export const text_color_black={
+    color:color_text_light
 }
