@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
-import {PlanCard} from './components/plancard'
+import  {PlanList} from './components'
 
 export default class App extends React.Component {
   render() {
     return(
-      <PlanCard/>
+      <PlanList/>
     )
   }
 }
