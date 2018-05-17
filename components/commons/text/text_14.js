@@ -65,6 +65,13 @@ export const color_white = {
   ...BaseText.text_color_white
 };
 
+export const color_white_medium={
+  ...text_14,
+  ...medium,
+  ...BaseText.text_color_white
+
+}
+
 export const color_black = {
   ...text_14,
   ...BaseText.text_color_black

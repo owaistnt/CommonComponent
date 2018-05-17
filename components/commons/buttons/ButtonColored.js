@@ -2,12 +2,12 @@ import React from 'react'
 import { View } from 'react-native'
 import { AbstractButton } from './AbstractButton'
 import {button_colored} from './button-styles'
-import {text_14_white_medium} from '../textstyle'
+import {TextStyle} from '../../commons'
 
 const ButtonColored = (props) => {
     return(
             <AbstractButton 
-            textStyle={text_14_white_medium}
+            textStyle={TextStyle.Text_14.color_white_medium}
             buttonStyle={button_colored}
             _onPress={props._onPress}>{props.children}</AbstractButton>
     );
