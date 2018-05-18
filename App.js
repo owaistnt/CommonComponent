@@ -1,11 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View, ScrollView } from "react-native";
 import  {PlanList} from './components'
+import {Vertical, CenterVertical, HorizontalReverse, RightVertical} from './components/commons/containers'
+import {TextStyle, Buttons} from './components/commons'
+import {Card, CardSection} from './components/commons/cards'
 
 export default class App extends React.Component {
   render() {
     return(
-      <PlanList/>
+     <PlanList/>
     )
   }
 }

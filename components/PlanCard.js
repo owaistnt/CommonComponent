@@ -87,7 +87,7 @@ const renderUpperSection=(props)=>{
             <Text style={{ ...TextStyle.Text_17.primary }}>
               {props.name}
             </Text>
-            <Text style={{ ...TextStyle.Text_12.medium }}>
+            <Text style={{ ...TextStyle.Text_12.font_medium }}>
               {getDurationText(props)}
             </Text>
             {renderBadge(props)}

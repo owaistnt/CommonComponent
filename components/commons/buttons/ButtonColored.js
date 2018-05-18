@@ -7,7 +7,7 @@ import {TextStyle} from '../../commons'
 const ButtonColored = (props) => {
     return(
             <AbstractButton 
-            textStyle={TextStyle.Text_14.color_white_medium}
+            textStyle={TextStyle.Text_14.color_white_font_medium}
             buttonStyle={button_colored}
             _onPress={props._onPress}>{props.children}</AbstractButton>
     );

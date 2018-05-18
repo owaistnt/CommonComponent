@@ -4,24 +4,24 @@ export const text_10 = {
   fontSize: 10
 };
 
-export const medium = {
+export const font_medium = {
   ...text_10,
-  ...BaseText.text_medium
+  ...BaseText.font_medium
 };
 
-export const light = {
+export const font_light = {
   ...text_10,
-  ...BaseText.text_light
+  ...BaseText.font_light
 };
 
-export const bold = {
+export const font_bold = {
   ...text_10,
-  ...BaseText.text_bold
+  ...BaseText.font_bold
 };
 
-export const thin = {
+export const font_thin = {
   ...text_10,
-  ...BaseText.text_thin
+  ...BaseText.font_thin
 };
 
 export const app_primary = {

@@ -5,24 +5,24 @@ export const text_12 = {
   ...BaseText.text_default_margins,
 };
 
-export const medium = {
+export const font_medium = {
   ...text_12,
-  ...BaseText.text_medium
+  ...BaseText.font_medium
 };
 
-export const light = {
+export const font_light = {
   ...text_12,
-  ...BaseText.text_light
+  ...BaseText.font_light
 };
 
-export const bold = {
+export const font_bold = {
   ...text_12,
-  ...BaseText.text_bold
+  ...BaseText.font_bold
 };
 
-export const thin = {
+export const font_thin = {
   ...text_12,
-  ...BaseText.text_thin
+  ...BaseText.font_thin
 };
 
 export const app_primary = {
@@ -57,7 +57,7 @@ export const accent_lighter = {
 
 export const black = {
   ...text_12,
-  ...BaseText.text_black
+  ...BaseText.font_black
 };
 
 export const color_white = {

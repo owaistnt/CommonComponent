@@ -53,23 +53,23 @@ export const text_deactivated={
     color:color_text_deactivated,
 }
 
-export const text_medium={
+export const font_medium={
     fontWeight: ROBOTO_MEDIUM,
 }
 
-export const text_light={
+export const font_light={
     fontWeight: ROBOTO_LIGHT,
 }
 
-export const text_thin={
+export const font_thin={
     fontWeight: ROBOTO_THIN,
 }
 
-export const text_bold={
+export const font_bold={
     fontWeight: ROBOTO_BOLD,
 }
 
-export const text_black={
+export const font_black={
     fontWeight: ROBOTO_BLACK,
 }
 

@@ -5,24 +5,24 @@ export const text_17 = {
   ...BaseText.text_default_margins,
 };
 
-export const medium = {
+export const font_medium = {
   ...text_17,
-  ...BaseText.text_medium
+  ...BaseText.font_medium
 };
 
-export const light = {
+export const font_light = {
   ...text_17,
-  ...BaseText.text_light
+  ...BaseText.font_light
 };
 
-export const bold = {
+export const font_bold = {
   ...text_17,
-  ...BaseText.text_bold
+  ...BaseText.font_bold
 };
 
-export const thin = {
+export const font_thin = {
   ...text_17,
-  ...BaseText.text_thin
+  ...BaseText.font_thin
 };
 
 export const app_primary = {
@@ -30,14 +30,14 @@ export const app_primary = {
   ...BaseText.text_app_primary
 };
 
-export const primary_medium={
+export const primary_font_medium={
   ...primary,
-  ...medium,
+  ...font_medium,
 }
 
-export const primary_light={
+export const primary_font_light={
   ...primary,
-  ...light,
+  ...font_light,
 }
 
 export const app_primary_dark = {
@@ -65,9 +65,9 @@ export const accent_lighter = {
   ...BaseText.text_app_secondary_lighter
 };
 
-export const black = {
+export const font_black = {
   ...text_17,
-  ...BaseText.text_black
+  ...BaseText.font_black
 };
 
 export const color_white = {
