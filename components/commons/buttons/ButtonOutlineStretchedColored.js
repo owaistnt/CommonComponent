@@ -2,7 +2,6 @@ import React from 'react'
 import { View } from 'react-native'
 import  {AbstractButton}  from './AbstractButton'
 import {button_outline_streched_colored} from './button-styles'
-import {text_14_accent_medium} from '../textstyle'
 import {TextStyle} from '../../commons'
 
 const ButtonOutlineStretchedColored = (props) => {
