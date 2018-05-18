@@ -4,11 +4,19 @@ import  {PlanList} from './components'
 import {Vertical, CenterVertical, HorizontalReverse, RightVertical} from './components/commons/containers'
 import {TextStyle, Buttons} from './components/commons'
 import {Card, CardSection} from './components/commons/cards'
+import { SampleData } from "./sample_data/plandata";
+
 
 export default class App extends React.Component {
+
+
   render() {
+    let { memberships, currency } = SampleData.data;
+    let membershiplist = [...memberships];
+    let currencyValue = currency.split(" ")[1];
+
     return(
-     <PlanList/>
+     <PlanList membershiplist={membershiplist} currency={currencyValue} />
     )
   }
 }

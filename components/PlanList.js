@@ -1,19 +1,18 @@
 import React, { Component } from "react";
 import { FlatList } from "react-native";
 import { PlanCard } from "../components";
-import { SampleData } from "../sample_data/plandata";
 
 class PlanList extends Component {
   constructor(props) {
     super(props);
-    let { memberships, currency } = SampleData.data;
+   /*  let { memberships, currency } = SampleData.data;
     let membershiplist = [...memberships];
-    let initialCurrency = currency.split(" ")[1];
-    let product_code = this.getDefaultProductCode(membershiplist);
+    let initialCurrency = currency.split(" ")[1]; */
+    let product_code = this.getDefaultProductCode(this.props.membershiplist);
 
     this.state = {
-      currency: initialCurrency,
-      dataSource: membershiplist,
+      currency: this.props.currency,
+      dataSource: this.props.membershiplist,
       selectedProduct: product_code
     };
   }
