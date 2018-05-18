@@ -21,18 +21,19 @@ class PlanCard extends Component {
 
   static propTypes = {
     name: PropTypes.string,
-    product_code: PropTypes.string,
+    productCode: PropTypes.string,
     currency: PropTypes.string,
     allowDiscount: PropTypes.bool,
-    discount_text: PropTypes.string,
+    discountedText: PropTypes.string,
     price: PropTypes.string,
-    saleprice: PropTypes.string,
+    salePrice: PropTypes.string,
     duration: PropTypes.number,
-    pricepermoth: PropTypes.string,
+    pricePerMonth: PropTypes.string,
+    productSubText:PropTypes.string,
     benefits: PropTypes.array,
     bestValue: PropTypes.bool,
-    topseller: PropTypes.bool,
-    your_plan: PropTypes.bool,
+    topSeller: PropTypes.bool,
+    yourPlan: PropTypes.bool,
     selected: PropTypes.bool,
     onContinue: PropTypes.func,
     onSelected:PropTypes.func,
@@ -40,7 +41,7 @@ class PlanCard extends Component {
   
   render() {
     return (
-      <Card _onPress={()=>this.props.onSelected(this.props.product_code)}>
+      <Card _onPress={()=>this.props.onSelected(this.props.productCode)}>
         {renderUpperSection(this.props)}
         {renderBottomSection(this.props)}
       </Card>
@@ -51,11 +52,20 @@ class PlanCard extends Component {
 const renderBenefits=(props)=> {
   let { benefits } = props;
   return benefits.map((item, index) => {
-    return (
-      <Text style={{ ...TextStyle.Text_14.secondary }} key={index}>
-        {item.value}
-      </Text>
-    );
+    if(item.available===true){
+      return (
+        <Text style={{ ...TextStyle.Text_14.secondary }} key={index}>
+          {item.value}
+        </Text>
+      );
+    }else{
+      return (
+        <Text style={{ ...TextStyle.Text_14.secondary,  
+        textDecorationLine: "line-through" }} key={index}>
+          {item.value}
+        </Text>
+      );
+    }
   });
 }
 
@@ -67,7 +77,7 @@ const renderBottomSection=(props)=> {
         <Vertical>
           {renderBenefits(props)}
           <CenterVertical>
-            <ButtonColored _onPress={()=>props.onContinue(props.product_code)}>
+            <ButtonColored _onPress={()=>props.onContinue(props.productCode)}>
               Continue
             </ButtonColored>
           </CenterVertical>
@@ -94,7 +104,7 @@ const renderUpperSection=(props)=>{
           </Vertical>
           <RightVertical>
             <HorizontalReverse>
-              <Text>{`${props.currency}${props.saleprice}`}</Text>
+              <Text>{`${props.currency}${props.salePrice}`}</Text>
               <Text
                 style={{
                   ...TextStyle.Text_12.secondary,
@@ -104,11 +114,11 @@ const renderUpperSection=(props)=>{
                 {`${props.currency}${props.price}`}
               </Text>
               <Text style={{ ...TextStyle.Text_10.color_offer }}>
-                {props.discount_text}
+                {props.discountedText}
               </Text>
             </HorizontalReverse>
             <Text style={{ ...TextStyle.Text_12.secondary }}>
-              {`Per month ${props.currency}${props.pricepermoth}`}
+              {`Per month ${props.currency}${props.pricePerMonth}`}
             </Text>
           </RightVertical>
         </CardSection>
@@ -124,10 +134,10 @@ const getDurationText=(props)=> {
 }
 
 const renderBadge=(props)=> {
-  console.log(`Best Seller ${props.topseller}`);
+  console.log(`Best Seller ${props.topSeller}`);
   console.log(`Best Value ${props.bestValue}`);
-  console.log(`Your Plan ${props.your_plan}`);
-  if (props.topseller === true) {
+  console.log(`Your Plan ${props.yourPlan}`);
+  if (props.topSeller === true) {
     return (
       <Text style={{ ...TextStyle.Text_10.app_primary }}>TOP SELLER</Text>
     );
@@ -139,7 +149,7 @@ const renderBadge=(props)=> {
     );
   }
 
-  if (props.your_plan === true) {
+  if (props.yourPlan === true) {
     return (
       <Text style={{ ...TextStyle.Text_10.app_primary }}>YOUR PLAN</Text>
     );

@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 import { FlatList } from "react-native";
 import { PlanCard } from "../components";
+import PropTypes from "prop-types";
 
 class PlanList extends Component {
+
+  static propTypes={
+      membershipList:PropTypes.array,
+      currency:PropTypes.string,
+  }
+
   constructor(props) {
     super(props);
-   /*  let { memberships, currency } = SampleData.data;
-    let membershiplist = [...memberships];
-    let initialCurrency = currency.split(" ")[1]; */
-    let product_code = this.getDefaultProductCode(this.props.membershiplist);
+    let product_code = this.getDefaultProductCode(this.props.membershipList);
 
     this.state = {
       currency: this.props.currency,
-      dataSource: this.props.membershiplist,
+      dataSource: this.props.membershipList,
       selectedProduct: product_code
     };
   }
@@ -23,18 +27,18 @@ class PlanList extends Component {
     <PlanCard
       name={item.name}
       price={item.price}
-      saleprice={item.saleprice}
+      salePrice={item.saleprice}
       allowDiscount={item.allowDiscount}
-      discount_text={item.discount_text[0]}
-      pricepermoth={item.pricepermoth}
-      product_subtext={item.product_subtext}
-      product_code={item.product_code}
+      discountedText={item.discount_text[0]}
+      pricePerMonth={item.pricepermoth}
+      productSubText={item.product_subtext}
+      productCode={item.product_code}
       duration={item.duration}
       currency={this.state.currency}
       benefits={item.benefits}
       bestValue-={item.bestValue}
-      topseller={item.topseller}
-      your_plan={item.your_plan}
+      topSeller={item.topseller}
+      yourPlan={item.your_plan}
       selected={this.state.selectedProduct === item.product_code}
       onContinue={product_code => {
         console.log(`Continue Pressed`);
@@ -60,8 +64,8 @@ class PlanList extends Component {
     );
   }
 
-  getDefaultProductCode = membershiplist => {
-    let defaultSelection = membershiplist.filter(item => {
+  getDefaultProductCode = membershipList => {
+    let defaultSelection = membershipList.filter(item => {
       let { product_code, defaultOffer } = item;
       console.log(
         `Product code verification ${product_code} : ${defaultOffer}, `

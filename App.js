@@ -12,11 +12,11 @@ export default class App extends React.Component {
 
   render() {
     let { memberships, currency } = SampleData.data;
-    let membershiplist = [...memberships];
+    let membershipList = [...memberships];
     let currencyValue = currency.split(" ")[1];
 
     return(
-     <PlanList membershiplist={membershiplist} currency={currencyValue} />
+     <PlanList membershipList={membershipList} currency={currencyValue} />
     )
   }
 }
